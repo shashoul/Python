@@ -58,16 +58,6 @@ def your120():
         year = cur_year + (120 - age)           # calculate your 120 birthday year
         print("Hello " + name + " you will celebrate your 120 birthday on " + str(year))
 
-def fun():
-    return "shady","hashoul",36
 
-mylist = [5,5,5]
-sum_avg(mylist)
 
-vowel("aaaaaaaauuuuuuuufffffhhhhhh")
-
-your120()
-
-emp = fun()
-print(emp[1])
 
