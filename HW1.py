@@ -42,8 +42,12 @@ from datetime import datetime
 def your120():
     # get input from the user
     name = input("Please enter your name:")
-    age = int(input("Please enter your age:"))
+    age  = input("Please enter your age:")
 
+    if not age.isdigit():
+        print("Please Enter a Numeric value for age")
+        return
+    age = int(age)
     if age <=0:
         print("Please Enter a valid age!!!")
         return
@@ -53,4 +57,17 @@ def your120():
         cur_year = datetime.now().year          # extract current year
         year = cur_year + (120 - age)           # calculate your 120 birthday year
         print("Hello " + name + " you will celebrate your 120 birthday on " + str(year))
+
+def fun():
+    return "shady","hashoul",36
+
+mylist = [5,5,5]
+sum_avg(mylist)
+
+vowel("aaaaaaaauuuuuuuufffffhhhhhh")
+
+your120()
+
+emp = fun()
+print(emp[1])
 
