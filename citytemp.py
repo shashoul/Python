@@ -15,10 +15,14 @@ def get_request_jason(url):
     return j_resp
 
 
-city = input("Please Enter you city:")
+#city = input("Please Enter you city:")
+city="haifa"
 
-resp_map = get_request_jason('http://maps.googleapis.com/maps/api/geocode/json?address='
-+ city)
+#resp_map = get_request_jason('http://maps.googleapis.com/maps/api/geocode/json?address='
+#+ city)
+resp_map = get_request_jason('http://maps.googleapis.com/maps/api/geocode/json?address="haifa"')
+
+
 dic1 = (resp_map['results'])[0]
 cor1 = str(dic1['geometry']['location']['lat'])
 cor2 = str(dic1['geometry']['location']['lng'])
